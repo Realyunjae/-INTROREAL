@@ -1,0 +1,245 @@
+ .body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 대상 요소의 기본 스타일 */
+.container {
+  width: 595px;
+  height: 842px;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+
+/* 내부 요소의 스타일 */
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  left: 7px;
+  top: 15px;
+  gap: 5px;
+}
+
+.custom-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 293px;
+  width: 514px;
+  overflow: hidden;
+  gap: 3px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #f3f5fa;
+  border: 1px solid #2e6ff2;
+}
+
+.inner-containe {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-grow: 0;
+  flex-shrink: 0;
+  position: relative;
+  gap: 5px;
+}
+
+.image-container {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  object-fit: contain;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-grow: 0;
+  flex-shrink: 0;
+  position: relative;
+  gap: 3px;
+}
+
+.info-item {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 124px;
+  height: 27px;
+}
+.name-and-title-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  gap: 6px; /* 1.5rem 기준인 Tailwind의 gap-1.5를 px로 변환 */
+}
+
+.name {
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 1.2rem; /* Tailwind의 text-xl */
+  text-align: left;
+  color: #2e6ff2;
+}
+
+.title {
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 0.75rem; /* Tailwind의 text-xs */
+  text-align: left;
+  color: #8d9299;
+}
+
+.divider {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+/* 대학생 진윤재를 소개하는 문단에 대한 스타일 */
+.introduction-text {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 315px;
+  font-size: 0.75rem; /* text-xs */
+  text-align: left;
+  color: #121314;
+}
+
+/* 외부 컨테이너에 대한 스타일 */
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 315px;
+  overflow: hidden;
+  gap: 6px; /* 1.5rem 기준으로 변환, 프로젝트의 기본 폰트 사이즈에 따라 조정 필요 */
+  padding: 16px; /* p-4 */
+  border-radius: 0.5rem; /* rounded-lg */
+  background-color: white;
+  border: 1px solid #d9dbe0;
+}
+
+/* 내부 컨테이너에 대한 스타일 */
+.inner-c {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 16px; /* h-4 */
+  position: relative;
+  gap: 3px; /* gap-[3px] */
+}
+.personal-info-title {
+  color: #2e6ff2; /* '개인정보' 제목 색상 */
+}
+
+.flex-static {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-grow: 0;
+  flex-shrink: 0;
+  position: relative;
+  gap: 1px; /* Tailwind의 'gap-1'을 px 단위로 변경 */
+}
+.text-xs-left {
+  font-size: 0.75rem; /* Tailwind의 'text-xs'에 해당 */
+  text-align: left;
+  color: #121314; /* 대부분의 텍스트 색상 */
+}
+.out-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 244px;
+  width: 514px;
+  position: relative;
+  overflow: hidden;
+  gap: 12px; 
+  padding: 20px; 
+  border-radius: 10px;
+  background-color: white;
+  border: 3px solid #d9dbe0;
+}
+
+/* 공통 컨테이너 스타일 */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  flex-grow: 0;
+  flex-shrink: 0;
+  position: relative;
+}
+
+/* 공통 박스 스타일 */
+.box {
+  height: 6px;
+  position: absolute;
+  top: -0.5px;
+  background-color: #d9dbe0;
+  border: 1px solid #d9dbe0;
+}
+
+/* 개별 박스 설정 */
+.box-1 { width: 160px; left: -0.5px; }
+.box-2 { width: 195px; left: 159.5px; }
+.box-3 { width: 100px; left: 354.5px; }
+
+/* 공통 텍스트 스타일 */
+.text {
+  position: absolute;
+  font-size: 12px; /* 'text-xs'의 대략적인 크기 */
+  text-align: center;
+  color: #121314;
+}
+
+/* 개별 텍스트 위치 설정 */
+.text-1 { left: 69px; top: 5px; }
+.text-2 { left: 247px; top: 5px; }
+.text-3 { left: 394px; top: 5px; }
+
+.tex-1 {
+  left: 10 px;
+  color: #121314;
+}
+
+.tex-2 {
+  left: 230px; /* 첫 번째 div에 대한 위치 */
+  color: #2e6ff2;
+}
+
+.tex-3 {
+  left: 394px;
+  color: #121314;
+}
+
+/* 활약 */
+ttex{
+color: #2e6ff2;}
